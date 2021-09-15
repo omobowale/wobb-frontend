@@ -10,6 +10,19 @@ import { Box, Card, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
 
+    root: {
+        // height: "700px",
+        // backgroundColor: "red",
+        // [theme.breakpoints.down('md')]: {
+        //     maxHeight: "700px",
+        //     backgroundColor: "green"
+        // },
+        // // [theme.breakpoints.down('sm')]: {
+        // //     height: "860px",
+        // //     backgroundColor: "purple"
+        // // },
+    },
+
     bgImage: {
         position: "relative",
         borderRadius: "10px",
@@ -43,19 +56,19 @@ export default function Main() {
     const classes = useStyles();
 
     return (
-        <>
+        <div className={classes.root}>
             <Box width="100%" height="150px" >
-                <img className={classes.bgImage} src={bgImage} />
+                <img className={classes.bgImage} src={bgImage} alt="background" />
             </Box>
             <Card className={classes.card}>
-                <img className={classes.figmaLogo} src={figmaLogo} />
+                <img className={classes.figmaLogo} src={figmaLogo} alt="logo" />
             </Card>
             <Box className={classes.content} >
                 <Center />
                 <MiddleNav />
                 <AboutSection /> 
             </Box>
-        </>
+        </div>
     )
 
 }

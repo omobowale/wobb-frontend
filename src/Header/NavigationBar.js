@@ -55,7 +55,7 @@ export default function NavigationBar() {
 
     return (
         <Paper elevation={0}>
-            <div className={classes.root, classes.setOpacity}>
+            <div className={classes.root + " " +  classes.setOpacity}>
                 {/* <Box className={classes.boxItem} display="flex" alignItems="center" justifyContent="space-between" flexDirection="row" p={0} marginX={24}  bgcolor="background.paper" fontWeight="bold"> */}
                 <Box className={classes.box} display="flex" alignItems="center" flexDirection="row" p={0} bgcolor="background.paper" fontWeight="bold">
                     <Box className={classes.boxItem}>

@@ -7,7 +7,7 @@ import { generalBlue } from '../Constants/colorConstants';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        margin: theme.spacing(0, 0, 1.5, 0)
+        margin: theme.spacing(0, 0, 1.5, 0),
     },
     setOpacity: {
         opacity: 0.7

@@ -35,7 +35,7 @@ export default function SideBarItem({name, category, followers, image}) {
         <div className={classes.sidebarRoot}>
             <Box paddingX={3} display="flex" justifyContent="center" alignItems="center" flexDirection="row">
                 <Box width="25%" marginRight={2} className={classes.imgContainer}>
-                    <img src={image} alt="Image" className={classes.img} />
+                    <img src={image} alt={name + " logo"} className={classes.img} />
                 </Box>
                 <Box width="100%">
                     <Box className={classes.name}>
